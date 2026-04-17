@@ -12,3 +12,6 @@ Check the status of Windows Update:
 * \* → means show all properties
 
 ```Get-Service wuauserv | Select Status, StartType```
+
+See all Windows Service Properties
+```Get-CimInstance Win32_Service -Filter "Name='wuauserv'" | Format-List * ```
