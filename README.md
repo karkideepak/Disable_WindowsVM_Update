@@ -9,6 +9,6 @@ Check the status of Windows Update:
 * Get-Service → gets the Windows Update service
 * -Name wuauserv → targets Windows Update
 * Format-List → shows output as a list (easy to read)
-** → means show all properties
+* \* → means show all properties
 
 ```Get-Service wuauserv | Select Status, StartType```
