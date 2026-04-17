@@ -6,9 +6,9 @@ Goodbye to installing updates loop.
 
 Check the status of Windows Update:
 ```Get-Service -Name wuauserv | Format-List *```
-# Get-Service → gets the Windows Update service
-# -Name wuauserv → targets Windows Update
-# Format-List → shows output as a list (easy to read)
-# * → means show all properties
+Get-Service → gets the Windows Update service
+-Name wuauserv → targets Windows Update
+Format-List → shows output as a list (easy to read)
+* → means show all properties
 
 ```Get-Service wuauserv | Select Status, StartType```
