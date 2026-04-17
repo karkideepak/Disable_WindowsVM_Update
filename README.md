@@ -15,3 +15,11 @@ Check the status of Windows Update:
 
 See all Windows Service Properties
 ```Get-CimInstance Win32_Service -Filter "Name='wuauserv'" | Format-List * ```
+
+Status:
+```Get-Service wuauserv | Select Status, StartType```
+Start:
+```Start-Service wuauserv```
+If it was disable before, we will need to enable.
+```Set-Service wuauserv -StartupType Manual```
+```Start-Service wuauserv```
